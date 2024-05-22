@@ -27,9 +27,9 @@ Anchors contain symbols like a caret and a dollar sign at the end of the string 
 ### Quantifiers
 Regex quantifiers include characters like ?,*, +, and items within curly brackets. They are used to determine the number of occurances or number of items, mostly when it comes to incoming data. Hovering over certain parts of a line of code will tell you the purpose of certain quantifiers. For quantifiers, if you look at W3 schools, almost or all of the descriptions for what quantifiers start with “matches any string with” or “matches any string that.” And then in each of the examples they provide, it says more specifics, for example, matches any string with and end at the end of it or that is for the n $ example. Additionally, quantifiers can determine any string that is followed by a specific string. Essentially, quantifiers tell you what to look for to match OR Operator
 ### OR Operator
-
+Alternation is an example of an OR Operator. It is declared with a the "|" character. For example, in the context of clothing items, if you wanted to find a few things like a shirt, pants, and shoes, you would write shirt|pants|shoes. This requests all 3, getting rid of the need for individual requests.
 ### Character Classes
-
+Character classes distinguish kinds of characters for example, numbers and digits. You can specify  a range of characters using a dash, For example, a-d would be the same as typing out a,b,c,d.
 ### Flags
 
 ### Grouping and Capturing
