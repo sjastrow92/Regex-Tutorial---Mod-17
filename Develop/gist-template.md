@@ -58,4 +58,10 @@ lookbehind-positive (?<=>) finds expression A where expression B precedes, where
 
 Github: [www.github.com/sjastrow92](https://github.com/sjastrow92)
 
+# Sources
+
+- w3 schools on regex components. 
+- regex video provided in assignment description.
+- stack overflow.
+
 
