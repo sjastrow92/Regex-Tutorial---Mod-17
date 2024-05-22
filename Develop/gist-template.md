@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# REGEX TUTORIAL
 
 Introductory paragraph (replace this with your text)
 
@@ -31,19 +31,31 @@ Alternation is an example of an OR Operator. It is declared with a the "|" chara
 ### Character Classes
 Character classes distinguish kinds of characters for example, numbers and digits. You can specify  a range of characters using a dash, For example, a-d would be the same as typing out a,b,c,d.
 ### Flags
-
+A flag is an optinal parameter to a regex that modifies its behavior of searching. Flags change the default searching behavior of an expression, and is typically denoted using a single lowercase character. There are 6 different flag types, each serving a different purpose.
+-(i) ignore casing. makes the expression search case-insensitive.
+-(g) global. makes the expression search for all occurances.
+-(s) dot all. makes the wild character "." match newlines.
+-(m) multiline. makes the bounday characters "^" and "$" match beginning and end of every line instead of the string.
+-(y) sticky. makes the expression start searching from the index.
+-(u) unicode. makes the expression assume individual characters as code points, not units.
 ### Grouping and Capturing
-
+Capturing groups subpatterns together, which allows you to apply quantifiers to multiple at once. It memorizes the information about a subpattern so that you can refer to it later.
 ### Bracket Expressions
-
+Brackets inform the user and program of a set of characters to match, whereas curly braces are used to specify an exact amount of things to match.
 ### Greedy and Lazy Match
-
+A greedy match (<.+>) will look for the longest possible string, whereas a Lazy match (<>.+?>) will look for the shortest. Using the word "hello" as an example, the greedy method h.+l matches "hell" in 'hello' but the lazy h.+?l matches "hel".
 ### Boundaries
-
+Using \b, it serves as an anchor that matches at a position called a "word boundary".  \b allows you to perform a “whole words only” search using a regular expression in the form of \bword\b. A “word character” is a character that can be used to form words. All characters that are not “word characters” are “non-word characters”.
 ### Back-references
+Backreferences match the same text as previously matched by a capturing group. Suppose you want to match a pair of opening and closing HTML tags, and the text in between. By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag. Here’s an example I was able to grab from https://www.regular-expressions.info/backref.html
 
+ <([A-Z][A-Z0-9]*)\b[^>]*>.*?</\1>. 
 ### Look-ahead and Look-behind
-
+Lookahead and Lookbehind are assertions that coome in positive and negative. 
+For example, lookahead-positive (?=) finds expression A where expression B follows, where look-ahead negative (?!) will find expression A where B does not follow.
+lookbehind-positive (?<=>) finds expression A where expression B precedes, where look-behind negative (?<!) finds expression A where expression B does not precede.
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Github: [www.github.com/sjastrow92](https://github.com/sjastrow92)
+
+
