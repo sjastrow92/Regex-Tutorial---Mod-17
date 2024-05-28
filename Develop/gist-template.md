@@ -1,10 +1,10 @@
 # REGEX TUTORIAL
 
-Introductory paragraph (replace this with your text)
+A regular expression, or regex, is a sequence of characters used to match patterns in text. These expressions are extremely useful for extracting data like phone numbers, emails, etc that follow a specific pattern from text, and they can be used in almost any programming language including JavaScript.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial I will break down the following regex for matching an email /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ into its basic components. This regex would be useful for validating email input in various applications.
 
 ## Table of Contents
 
